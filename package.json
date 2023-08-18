@@ -1,0 +1,22 @@
+{
+  "name": "erc20-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts --network",
+    "test": "hardhat test",
+    "verify": "hardhat verify --network",
+    "clean": "hardhat clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.17.1",
+    "web3": "^4.1.0"
+  }
+}
