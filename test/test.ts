@@ -37,7 +37,7 @@ describe("Vault", function () {
         let transferAmount:bigint = utils.parseEther(500 * 10 ** 3);
         await token.transfer(alice.address, utils.parseEther(10 ** 6));
         await token.connect(alice).approve(vaultAddess, await token.balanceOf(alice.address));
-        await vault.connect(alice).deposite(transferAmount);
+        await vault.connect(alice).deposit(transferAmount);
         let vaultAmount:bigint = await token.balanceOf(vaultAddess);
         expect(transferAmount == vaultAmount);
     });

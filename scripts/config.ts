@@ -1,11 +1,16 @@
-import {promises as fs} from 'fs';
+import * as fs from 'fs';
+import * as util from 'util'; 
+import * as coco from '../artifacts/contracts/CoCo.sol/CoCo.json';
+import * as vault from '../artifacts/contracts/Vault.sol/Vault.json';
 
 var config:any;
 
 const configFilePath = './config.json';
+const outputAbiPath = './scripts/contract.ts';
+
 
 export async function initConfig(): Promise<any>{
-    config = JSON.parse(((await fs.readFile(configFilePath)).toString()));
+    config = JSON.parse(((await fs.readFileSync(configFilePath)).toString()));
     return config;
 }
 
@@ -34,5 +39,12 @@ export function setConfig(path: string, val: string): void{
 }
 
 export async function updateConfig(){
-    return fs.writeFile(configFilePath, JSON.stringify(config, null, 2));
+    fs.writeFileSync(configFilePath, JSON.stringify(config, null, 2));
+    const write = `const VAULT_CONTRACT = ${util.inspect(vault.abi, false, 4, false)} as const;
+
+const COCO_CONTRACT = ${util.inspect(coco.abi, false, 4, false)} as const;
+
+export {VAULT_CONTRACT, COCO_CONTRACT}
+    `;
+    fs.writeFileSync(outputAbiPath, write,);
 }

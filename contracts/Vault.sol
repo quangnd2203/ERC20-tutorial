@@ -34,7 +34,7 @@ contract Vault is Ownable, AccessControlEnumerable {
         token.transfer(to, _amount);
     }
 
-    function deposite(uint256 _amount) external {
+    function deposit(uint256 _amount) external {
         require(
             token.balanceOf(msg.sender) >= _amount,
             "insufficient account balance"
