@@ -13,9 +13,10 @@
 // module.exports = router;
 
 import * as express from 'express';
+import * as controller from '../controllers/vault_controller';
 
 const router = express.Router();
 
 router.post('/withdraw', async (req, res) => {
-    
+    controller.withdraw(req, res);
 })

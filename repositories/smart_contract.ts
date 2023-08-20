@@ -44,3 +44,4 @@ class SmartContractRepo {
     }
 }
 
+export {SmartContractRepo}
