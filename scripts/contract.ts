@@ -97,28 +97,28 @@ const VAULT_CONTRACT = [
   {
     inputs: [],
     name: 'DEFAULT_ADMIN_ROLE',
-    outputs: [ { internalType: 'bytes32', name: '', type: 'bytes32' } ],
+    outputs: [{ internalType: 'bytes32', name: '', type: 'bytes32' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
     inputs: [],
     name: 'WITHDRAW_ROLE',
-    outputs: [ { internalType: 'bytes32', name: '', type: 'bytes32' } ],
+    outputs: [{ internalType: 'bytes32', name: '', type: 'bytes32' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'uint256', name: '_amount', type: 'uint256' } ],
+    inputs: [{ internalType: 'uint256', name: '_amount', type: 'uint256' }],
     name: 'deposit',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'bytes32', name: 'role', type: 'bytes32' } ],
+    inputs: [{ internalType: 'bytes32', name: 'role', type: 'bytes32' }],
     name: 'getRoleAdmin',
-    outputs: [ { internalType: 'bytes32', name: '', type: 'bytes32' } ],
+    outputs: [{ internalType: 'bytes32', name: '', type: 'bytes32' }],
     stateMutability: 'view',
     type: 'function'
   },
@@ -128,14 +128,14 @@ const VAULT_CONTRACT = [
       { internalType: 'uint256', name: 'index', type: 'uint256' }
     ],
     name: 'getRoleMember',
-    outputs: [ { internalType: 'address', name: '', type: 'address' } ],
+    outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'bytes32', name: 'role', type: 'bytes32' } ],
+    inputs: [{ internalType: 'bytes32', name: 'role', type: 'bytes32' }],
     name: 'getRoleMemberCount',
-    outputs: [ { internalType: 'uint256', name: '', type: 'uint256' } ],
+    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
     stateMutability: 'view',
     type: 'function'
   },
@@ -155,28 +155,28 @@ const VAULT_CONTRACT = [
       { internalType: 'address', name: 'account', type: 'address' }
     ],
     name: 'hasRole',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
     inputs: [],
     name: 'isWithdrawEnable',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
     inputs: [],
     name: 'maxWithdrawAmount',
-    outputs: [ { internalType: 'uint256', name: '', type: 'uint256' } ],
+    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
     inputs: [],
     name: 'owner',
-    outputs: [ { internalType: 'address', name: '', type: 'address' } ],
+    outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function'
   },
@@ -208,7 +208,7 @@ const VAULT_CONTRACT = [
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'uint256', name: '_amount', type: 'uint256' } ],
+    inputs: [{ internalType: 'uint256', name: '_amount', type: 'uint256' }],
     name: 'setMaxWithdrawAmount',
     outputs: [],
     stateMutability: 'nonpayable',
@@ -228,21 +228,21 @@ const VAULT_CONTRACT = [
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'bool', name: '_isEnable', type: 'bool' } ],
+    inputs: [{ internalType: 'bool', name: '_isEnable', type: 'bool' }],
     name: 'setWithdrawEnable',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'bytes4', name: 'interfaceId', type: 'bytes4' } ],
+    inputs: [{ internalType: 'bytes4', name: 'interfaceId', type: 'bytes4' }],
     name: 'supportsInterface',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'address', name: 'newOwner', type: 'address' } ],
+    inputs: [{ internalType: 'address', name: 'newOwner', type: 'address' }],
     name: 'transferOwnership',
     outputs: [],
     stateMutability: 'nonpayable',
@@ -337,7 +337,7 @@ const COCO_CONTRACT = [
       { internalType: 'address', name: 'spender', type: 'address' }
     ],
     name: 'allowance',
-    outputs: [ { internalType: 'uint256', name: '', type: 'uint256' } ],
+    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
     stateMutability: 'view',
     type: 'function'
   },
@@ -347,19 +347,19 @@ const COCO_CONTRACT = [
       { internalType: 'uint256', name: 'amount', type: 'uint256' }
     ],
     name: 'approve',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'nonpayable',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'address', name: 'account', type: 'address' } ],
+    inputs: [{ internalType: 'address', name: 'account', type: 'address' }],
     name: 'balanceOf',
-    outputs: [ { internalType: 'uint256', name: '', type: 'uint256' } ],
+    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'uint256', name: 'amount', type: 'uint256' } ],
+    inputs: [{ internalType: 'uint256', name: 'amount', type: 'uint256' }],
     name: 'burn',
     outputs: [],
     stateMutability: 'nonpayable',
@@ -378,7 +378,7 @@ const COCO_CONTRACT = [
   {
     inputs: [],
     name: 'decimals',
-    outputs: [ { internalType: 'uint8', name: '', type: 'uint8' } ],
+    outputs: [{ internalType: 'uint8', name: '', type: 'uint8' }],
     stateMutability: 'view',
     type: 'function'
   },
@@ -392,7 +392,7 @@ const COCO_CONTRACT = [
       }
     ],
     name: 'decreaseAllowance',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'nonpayable',
     type: 'function'
   },
@@ -402,7 +402,7 @@ const COCO_CONTRACT = [
       { internalType: 'uint256', name: 'addedValue', type: 'uint256' }
     ],
     name: 'increaseAllowance',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'nonpayable',
     type: 'function'
   },
@@ -419,14 +419,14 @@ const COCO_CONTRACT = [
   {
     inputs: [],
     name: 'name',
-    outputs: [ { internalType: 'string', name: '', type: 'string' } ],
+    outputs: [{ internalType: 'string', name: '', type: 'string' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
     inputs: [],
     name: 'owner',
-    outputs: [ { internalType: 'address', name: '', type: 'address' } ],
+    outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function'
   },
@@ -440,14 +440,14 @@ const COCO_CONTRACT = [
   {
     inputs: [],
     name: 'symbol',
-    outputs: [ { internalType: 'string', name: '', type: 'string' } ],
+    outputs: [{ internalType: 'string', name: '', type: 'string' }],
     stateMutability: 'view',
     type: 'function'
   },
   {
     inputs: [],
     name: 'totalSupply',
-    outputs: [ { internalType: 'uint256', name: '', type: 'uint256' } ],
+    outputs: [{ internalType: 'uint256', name: '', type: 'uint256' }],
     stateMutability: 'view',
     type: 'function'
   },
@@ -457,7 +457,7 @@ const COCO_CONTRACT = [
       { internalType: 'uint256', name: 'amount', type: 'uint256' }
     ],
     name: 'transfer',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'nonpayable',
     type: 'function'
   },
@@ -468,12 +468,12 @@ const COCO_CONTRACT = [
       { internalType: 'uint256', name: 'amount', type: 'uint256' }
     ],
     name: 'transferFrom',
-    outputs: [ { internalType: 'bool', name: '', type: 'bool' } ],
+    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
     stateMutability: 'nonpayable',
     type: 'function'
   },
   {
-    inputs: [ { internalType: 'address', name: 'newOwner', type: 'address' } ],
+    inputs: [{ internalType: 'address', name: 'newOwner', type: 'address' }],
     name: 'transferOwnership',
     outputs: [],
     stateMutability: 'nonpayable',
@@ -481,5 +481,4 @@ const COCO_CONTRACT = [
   }
 ] as const;
 
-export {VAULT_CONTRACT, COCO_CONTRACT}
-    
+export { VAULT_CONTRACT, COCO_CONTRACT }

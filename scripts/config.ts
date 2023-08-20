@@ -40,7 +40,8 @@ export function setConfig(path: string, val: string): void{
 
 export async function updateConfig(){
     fs.writeFileSync(configFilePath, JSON.stringify(config, null, 2));
-    const write = `const VAULT_CONTRACT = ${util.inspect(vault.abi, false, 4, false)} as const;
+    const write = `
+const VAULT_CONTRACT = ${util.inspect(vault.abi, false, 4, false)} as const;
 
 const COCO_CONTRACT = ${util.inspect(coco.abi, false, 4, false)} as const;
 
