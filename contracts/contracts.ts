@@ -1,4 +1,3 @@
-
 const VAULT_CONTRACT = [
     { inputs: [], stateMutability: 'nonpayable', type: 'constructor' },
     {
